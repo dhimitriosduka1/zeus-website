@@ -26,7 +26,7 @@
 		<section
 			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
-				<h2>Echoes from the Cosmic Ocean.</h2>
+				<h2>A voyager between worlds.</h2>
 				<!-- <h2>Into the Cosmic Abyss</h2> -->
 				<p>Computer Graphics 2023/2024 - Final Project</p>
 				<p>Crafted by <a href="https://www.linkedin.com/in/arseny-dremin-b74135207/">Arseny Dremin</a> and <a
@@ -46,9 +46,7 @@
 			id="first">
 			<div class="content">
 				<h2>Inspiration.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
-					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+				<p>We drew inspiration from the mysterious nature of the universe. </p>
 			</div>
 			<div class="image">
 				<img src="images/spotlight01.jpg" alt="" />
@@ -87,7 +85,7 @@
 					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
 			</div>
 			<div class="image">
-				<img src="images/heterogeneous-volume/cloud.jpeg" alt="" />
+				<img src="images/heterogeneous-volume/cloud.jpeg"/>
 			</div>
 		</section>
 
@@ -95,12 +93,13 @@
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
 				<h2>Homogeneous participating medium.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
-					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+				<p>To visually capture the essence of the unknown within our scene, we turned to the mysterious and
+					captivating effects of fog. We implemented a homogeneous participating medium into our renderer that
+					allowed us to replicate the mysterious nature of fog, effectively setting the stage for our
+					exploration of the unknown.</p>
 			</div>
 			<div class="image">
-				<img src="images/spotlight02.jpg" alt="" />
+				<img src="images/spotlight02.jpg"/>
 			</div>
 		</section>
 
@@ -120,18 +119,33 @@
 		<!-- Normal mapping	 -->
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
-				<h2>Normal mapping.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
-					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+				<h2>Shading normals.</h2>
+				<p>In our pursuit of achieving complex details in our final image, we opted to use shading normals,
+					commonly referred to as normal maps, to enhance the realism of surfaces. This method proved to be
+					more efficient than exporting a complex mesh, as it allowed us to simulate more intricate details
+					without the need for increased geometric complexity.</p>
 			</div>
 			<div class="image">
 				<!-- <iframe frameborder="0" class="juxtapose" width="100%" height="1080" -->
-					<!-- src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28162668-c20d-11ee-9ddd-3f41531135b6"></iframe> -->
+				<!-- src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28162668-c20d-11ee-9ddd-3f41531135b6"></iframe> -->
 				<img src="images/normal-mapping/normal-mapping.jpeg" alt="" />
 			</div>
 		</section>
 
+		<!-- Image Denoising -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Image Denoising.</h2>
+				<p>To ensure a pristine final image, we leveraged the capabilities of the Intel Open Image Denoise
+					library. We decided to implement it in the form of a post-process. The implementation was pretty
+					straightforward. We had to download the prebuilt binaries and use the simple yet flexible C/C++ API.
+				</p>
+				<!-- <p>The implementation of the image denoising post-process can be found in: </br> <code>/src/post_processing/denoising.cpp</code></p> -->
+			</div>
+			<div class="image">
+				<img src="images/spotlight03.jpg" alt="" />
+			</div>
+		</section>
 
 		<section class="wrapper style1 align-center">
 			<div class="inner">
