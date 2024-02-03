@@ -18,11 +18,7 @@
 </head>
 
 <body class="is-preload">
-
-	<!-- Wrapper -->
 	<div id="wrapper" class="divided">
-
-		<!-- One -->
 		<section
 			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
@@ -43,28 +39,29 @@
 		<section class="wrapper style1 align-center">
 			<div class="inner">
 				<h2>Inspiration.</h2>
-				<p>We drew inspiration from the mysterious nature of the universe.</p>
+				<p>Our creative muse was the universe's enigmatic allure and the covert mysteries it harbors. We
+					wanted our scene to be simple, but yet intriguing and thought-provoking while also transmitting a
+					sense of wonder and curiosity.</p>
 			</div>
 		</section>
 
 		<section class="wrapper style1 align-center">
 			<div class="inner">
 				<h2>Features</h2>
-				<p>In this section, we delve into the various features that were crucial in crafting our final image.
-					Each chosen feature played an important role in bringing the theme "Journey to the Unknown" to life,
-					meticulously shaping every visual aspect to resonate with the essence of exploration and mystery.
+				<p>We decided to go with an abstract and atmospheric scene that fits with the “Journey to the Unknown”
+					theme. Below is the list of features we've implemented and used in our scene.
 				</p>
 			</div>
 		</section>
-
 
 		<!-- Heterogeneous participating medium -->
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
 				<h2>Heterogeneous participating medium.</h2>
-				<p>To infuse our scene with a sense of enigmatic depth and to further enhance the theme of a 'Journey to
-					the Unknown,' we aspired to incorporate a bed of clouds. These clouds were not just to serve as a
-					visual element but also to act as a metaphorical blanket, shrouding the depths that lie beneath.</p>
+				<p>We crafted our scene with clouds as a central element of it. Consenquently, we had to implement
+					volume tracking and support for
+					voxel grids to render them. We also added a way to load VDB files, which allowed us to easily
+					display any kind of volumetric data.</p>
 			</div>
 			<div class="image">
 				<img src="images/heterogeneous-volume/cloud.jpeg" />
@@ -75,9 +72,10 @@
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
 				<h2>Homogeneous participating medium.</h2>
-				<p>To visually capture the essence of the unknown within our scene, we turned to the mysterious and
-					captivating effects of fog. We implemented a homogeneous participating medium into our renderer that
-					allowed us to replicate the mysterious nature of it, effectively setting the stage for our
+				<p>We implemented a homogeneous participating medium into our renderer to create a fog/atmosphere
+					effect. It helps a lot with realistically
+					fading distant objects and gives a bit of overall glow and mood to the scene, effectively setting
+					the stage for our
 					exploration of the unknown.</p>
 			</div>
 			<div class="image">
@@ -89,10 +87,8 @@
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
 				<h2>Environment Mapping.</h2>
-				<p>To fully implement our scene, we needed it to be placed in an environment that complemented the
-					narrative. For the mystical atmosphere that we aimed to capture, our scene was designed to unfold
-					under a night sky. To achieve this, we used environment mapping, which allowed us to project a
-					panoramic night sky onto the background of our image.</p>
+				<p>We implemented Environment Maps sampling to bring a bit more detail to the background and improve
+					scene lighting.</p>
 			</div>
 			<div class="image">
 				<img src="images/env-mapping/env-mapping.jpeg" />
