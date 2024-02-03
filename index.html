@@ -120,10 +120,10 @@
 			style="overflow: hidden;">
 			<div class="content">
 				<h2>Image Denoising.</h2>
-				<p>To ensure a pristine final image, we leveraged the capabilities of the Intel Open Image Denoise
-					library. We opted for its integration as a post-processing step. This implementation process was
-					relatively straightforward. It required us to download the pre-built binaries and use the library's
-					simple, yet versatile, C/C++ API.
+				<p>Rendering volumes produces a lot of noise, so it was an obvious choice to add denoising to our
+					post-processing stack. For that, we leveraged the
+					capabilities of the Intel Open Image Denoise library, which combines the Normal and Albedo passes to
+					denoise the rendered image.
 				</p>
 			</div>
 			<div class="image">
