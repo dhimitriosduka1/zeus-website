@@ -27,7 +27,6 @@
 			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
 				<h2>A voyager between worlds.</h2>
-				<!-- <h2>Into the Cosmic Abyss</h2> -->
 				<p>Computer Graphics 2023/2024 - Final Project</p>
 				<p>Crafted by <a href="https://www.linkedin.com/in/arseny-dremin-b74135207/">Arseny Dremin</a> and <a
 						href="https://www.linkedin.com/in/dhimitriosduka/">Dhimitrios Duka</a></p>
@@ -37,28 +36,14 @@
 				</ul>
 			</div>
 			<div class="image">
-				<img src="images/scene/4_h.png" alt="" />
+				<img src="images/scene/4_h.png" />
 			</div>
 		</section>
 
-		<!-- Two -->
 		<section class="wrapper style1 align-center">
 			<div class="inner">
 				<h2>Inspiration.</h2>
 				<p>We drew inspiration from the mysterious nature of the universe.</p>
-			</div>
-		</section>
-
-		<!-- Three -->
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h2>The buildup.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
-					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="image">
-				<img src="images/spotlight02.jpg" alt="" />
 			</div>
 		</section>
 
@@ -79,13 +64,7 @@
 				<h2>Heterogeneous participating medium.</h2>
 				<p>To infuse our scene with a sense of enigmatic depth and to further enhance the theme of a 'Journey to
 					the Unknown,' we aspired to incorporate a bed of clouds. These clouds were not just to serve as a
-					visual element but also to act as a metaphorical blanket, shrouding the depths that lie beneath. To
-					realize this vision, we implemented a heterogeneous participating medium within our renderer. This
-					sophisticated feature allowed us to simulate the intricate light scattering and absorption effects
-					of real clouds, providing a more dynamic and textured appearance. The resulting cloud bed added a
-					layer of complexity and realism to the scene, amplifying the sense of vastness and the unknown as it
-					interacts with the other elements and the light from the environment, enhancing the overall ethereal
-					and mysterious atmosphere of our final image.</p>
+					visual element but also to act as a metaphorical blanket, shrouding the depths that lie beneath.</p>
 			</div>
 			<div class="image">
 				<img src="images/heterogeneous-volume/cloud.jpeg" />
@@ -102,7 +81,7 @@
 					exploration of the unknown.</p>
 			</div>
 			<div class="image">
-				<img src="images/spotlight02.jpg" />
+				<img src="images/homoheneous-volume/homogeneous.png" />
 			</div>
 		</section>
 
@@ -112,16 +91,17 @@
 				<h2>Environment Mapping.</h2>
 				<p>To fully implement our scene, we needed it to be placed in an environment that complemented the
 					narrative. For the mystical atmosphere that we aimed to capture, our scene was designed to unfold
-					under a night sky around Jupiter. To achieve this, we used environment mapping, a technique that
-					allowed us to project a panoramic night sky onto the background of our image.</p>
+					under a night sky. To achieve this, we used environment mapping, which allowed us to project a
+					panoramic night sky onto the background of our image.</p>
 			</div>
 			<div class="image">
-				<img src="images/env-mapping/env-mapping.jpeg"/>
+				<img src="images/env-mapping/env-mapping.jpeg" />
 			</div>
 		</section>
 
 		<!-- Normal mapping	 -->
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			style="overflow: hidden;">
 			<div class="content">
 				<h2>Shading normals.</h2>
 				<p>In our pursuit of achieving complex details in our final image, we opted to use shading normals,
@@ -130,25 +110,41 @@
 					without the need for increased geometric complexity.</p>
 			</div>
 			<div class="image">
-				<!-- <iframe frameborder="0" class="juxtapose" width="100%" height="1080" -->
-				<!-- src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28162668-c20d-11ee-9ddd-3f41531135b6"></iframe> -->
-				<img src="images/normal-mapping/normal-mapping.jpeg" alt="" />
+				<iframe frameborder="0" class="juxtapose" width="100%" height="100%" scrolling="no"
+					src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d2950ba8-c2b3-11ee-9ddd-3f41531135b6"></iframe>
 			</div>
 		</section>
 
 		<!-- Image Denoising -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			style="overflow: hidden;">
 			<div class="content">
 				<h2>Image Denoising.</h2>
 				<p>To ensure a pristine final image, we leveraged the capabilities of the Intel Open Image Denoise
 					library. We opted for its integration as a post-processing step. This implementation process was
-					relatively straightforward. It required us to download the pre-built binaries and use the
-					library's simple, yet versatile, C/C++ API.
+					relatively straightforward. It required us to download the pre-built binaries and use the library's
+					simple, yet versatile, C/C++ API.
 				</p>
-				<!-- <p>The implementation of the image denoising post-process can be found in: </br> <code>/src/post_processing/denoising.cpp</code></p> -->
 			</div>
 			<div class="image">
-				<img src="images/spotlight03.jpg" alt="" />
+				<iframe frameborder="0" class="juxtapose" width="100%" height="100%" scrolling="no"
+					src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=564b0732-c2b3-11ee-9ddd-3f41531135b6"></iframe>
+			</div>
+		</section>
+
+		<!-- Bloom -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			style="overflow: hidden;">
+			<div class="content">
+				<h2>Bloom.</h2>
+				<p>In our pursuit of achieving complex details in our final image, we opted to use shading normals,
+					commonly referred to as normal maps, to enhance the realism of surfaces. This method proved to be
+					more efficient than exporting a complex mesh, as it allowed us to simulate more intricate details
+					without the need for increased geometric complexity.</p>
+			</div>
+			<div class="image">
+				<iframe frameborder="0" class="juxtapose" width="100%" height="100%" scrolling="no"
+					src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8f45851e-c2b6-11ee-9ddd-3f41531135b6"></iframe>
 			</div>
 		</section>
 
@@ -157,22 +153,18 @@
 				<h2>Statistics</h2>
 				<div class="items style1 small onscroll-fade-in">
 					<section>
-						<!-- <span class="icon style2 major fa-gem"></span> -->
 						<h3>Resolution</h3>
 						<p>1080 x 1080</p>
 					</section>
 					<section>
-						<!-- <span class="icon solid style2 major fa-save"></span> -->
 						<h3>Triangles</h3>
 						<p>69</p>
 					</section>
 					<section>
-						<!-- <span class="icon solid style2 major fa-chart-bar"></span> -->
 						<h3>Samples</h3>
 						<p>420</p>
 					</section>
 					<section>
-						<!-- <span class="icon solid style2 major fa-wifi"></span> -->
 						<h3>Rendering Time</h3>
 						<p>8 hours 0 minutes</p>
 					</section>
