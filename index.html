@@ -24,7 +24,7 @@
 			<div class="content">
 				<h2>A voyager between worlds.</h2>
 				<p>Computer Graphics 2023/2024 - Final Project</p>
-				<p>Crafted by <a href="https://www.linkedin.com/in/arseny-dremin-b74135207/" target="_blank">Arseny
+				<p>Crafted by <a href="https://github.com/RainCatalyst" target="_blank">Arseny
 						Dremin</a> and <a href="https://www.linkedin.com/in/dhimitriosduka/" target="_blank">Dhimitrios
 						Duka</a></p>
 				<ul class="actions">
@@ -39,7 +39,7 @@
 
 		<section class="wrapper style1 align-center">
 			<div class="inner">
-				<h2>Inspiration.</h2>
+				<h2>Inspiration</h2>
 				<p>Our creative muse was the universe's enigmatic allure and the covert mysteries it harbors. We
 					wanted our scene to be simple, but yet intriguing and thought-provoking while also transmitting a
 					sense of wonder and curiosity.</p>
@@ -48,7 +48,7 @@
 
 		<section class="wrapper style1 align-center">
 			<div class="inner">
-				<h2>Features.</h2>
+				<h2>Features</h2>
 				<p>We decided to go with an abstract and atmospheric scene that fits with the
 					<code>Journey to the Unknown</code>
 					theme. Below is the list of features we've implemented and used in our scene.
@@ -59,7 +59,7 @@
 		<!-- Heterogeneous participating medium -->
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
-				<h2>Heterogeneous participating medium.</h2>
+				<h2>Heterogeneous participating medium</h2>
 				<p>We crafted our scene with clouds as a central element of it. Consenquently, we had to implement
 					volume tracking and support for
 					voxel grids to render them. We also added a way to load VDB files, which allowed us to easily
@@ -73,7 +73,7 @@
 		<!-- Homogeneous participating medium -->
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
-				<h2>Homogeneous participating medium.</h2>
+				<h2>Homogeneous participating medium</h2>
 				<p>We implemented a homogeneous participating medium into our renderer to create a fog/atmosphere
 					effect. It helps a lot with realistically
 					fading distant objects and gives a bit of overall glow and mood to the scene, effectively setting
@@ -88,7 +88,7 @@
 		<!-- Environment Mapping -->
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
-				<h2>Environment Mapping.</h2>
+				<h2>Environment Mapping</h2>
 				<p>We implemented Environment Maps sampling to bring a bit more detail to the background and improve
 					scene lighting.</p>
 			</div>
@@ -101,7 +101,7 @@
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
 			style="overflow: hidden;">
 			<div class="content">
-				<h2>Shading normals.</h2>
+				<h2>Shading normals</h2>
 				<p>Despite not bringing much contribution to the final scene, adding support for normal maps allowed us
 					to get a bit more detail in the models with almost no overhead.</p>
 			</div>
@@ -115,7 +115,7 @@
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
 			style="overflow: hidden;">
 			<div class="content">
-				<h2>Image Denoising.</h2>
+				<h2>Image Denoising</h2>
 				<p>Rendering volumes produces a lot of noise, so it was an obvious choice to add denoising to our
 					post-processing stack. For that, we leveraged the
 					capabilities of the Intel Open Image Denoise library, which combines the Normal and Albedo passes to
@@ -132,7 +132,7 @@
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
 			style="overflow: hidden;">
 			<div class="content">
-				<h2>Bloom.</h2>
+				<h2>Bloom</h2>
 				<p>Glow (or Bloom) effect helps enhance the appearance of emissive objects, specifically the light
 					columns in our scene. We implemented bloom as a part of our post-processing pipeline, as it is a lot
 					more practical than simulating lens imperfections.</p>
@@ -143,9 +143,23 @@
 			</div>
 		</section>
 
+		<!-- Postprocess -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			style="overflow: hidden;">
+			<div class="content">
+				<h2>Extra Post Processing</h2>
+				<p>Using simple compositing tricks, we added a few final tweaks to the image, such as Lens Flare, Vignette and Brightness adjustments.
+				</p>
+			</div>
+			<div class="image">
+				<iframe frameborder="0" class="juxtapose" width="100%" height="100%" scrolling="no"
+					src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=c98dda14-c37e-11ee-9ddd-3f41531135b6"></iframe>
+			</div>
+		</section>
+
 		<section class="wrapper style1 align-center">
 			<div class="inner">
-				<h2>Statistics.</h2>
+				<h2>Statistics</h2>
 				<div class="items style1 small">
 					<section>
 						<h3>Resolution</h3>
